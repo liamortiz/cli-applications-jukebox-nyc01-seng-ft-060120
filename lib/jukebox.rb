@@ -20,11 +20,11 @@ def play(songs)
   
   if songs.include?(user_input)
     puts "Playing #{user_input}"
-  end
-  user_input = user_input.to_i
-  if user_input.between(1, songs.size)
-    puts "Playing #{songs[user_input - 1]}"
-  end
+  else
+    user_input = user_input.to_i
+    if user_input.between(1, songs.size)
+      puts "Playing #{songs[user_input - 1]}"
+    end
   
 end
 
