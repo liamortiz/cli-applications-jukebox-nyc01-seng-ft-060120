@@ -25,7 +25,7 @@ def play(songs)
     if user_input.between?(1, songs.size)
       puts "Playing #{songs[user_input - 1]}"
     else
-      puts ""
+      puts "Invalid input, please try again"
     end
   end
   
