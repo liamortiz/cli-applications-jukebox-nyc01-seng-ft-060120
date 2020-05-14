@@ -18,7 +18,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
   
-  if not songs.include?(user_input) and user_input.to_i.between(1, songs.size)
+  if not songs.include?(user_input) and not user_input.to_i.between?(1, songs.size)
+    puts 
 end
 
 def exit_jukebox
