@@ -40,7 +40,9 @@ def run
   user_input = gets.strip
   while user_input != "exit" do
     case user_input
-    
+    when "help"
+      help
+      
   end
   
   exit_jukebox
