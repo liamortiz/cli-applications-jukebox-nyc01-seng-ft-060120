@@ -14,7 +14,7 @@ def list(songs)
   end
 end
 
-def play
+def play(songs)
   user_input = gets.strip
   puts ""
 end
