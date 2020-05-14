@@ -18,14 +18,15 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
   
-  song_name = songs.include?(user_input)
-  
   if songs.include?(user_input)
     puts "Playing #{user_input}"
-  elsif user_input.to_i != 0 and user_input.to_i.between(1, songs.size)
-    puts "Playing #{songs[user_input.to_i - 1]}"
   else
-    puts "Invalid input, please try again"
+    user_input = user_input.to_i
+    if user_input.between(1, songs.size)
+      puts "Playing #{songs[user_input - 1]}"
+    else
+      puts ""
+    end
   end
 end
 
