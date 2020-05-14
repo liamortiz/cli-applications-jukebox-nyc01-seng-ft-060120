@@ -25,7 +25,7 @@ def play(songs)
     puts "Playing #{user_input}"
   else
     puts "Playing #{songs[user_input.to_i - 1]}"
-  
+  end
 end
 
 def exit_jukebox
