@@ -23,7 +23,7 @@ def play(songs)
   elsif user_input.to_i.between(1, songs.size)
     puts "Playing #{songs[user_input.to_i - 1]}"
   else
-    puts ""
+    puts "Invalid input, please try again"
 end
 
 def exit_jukebox
