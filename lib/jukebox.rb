@@ -8,8 +8,10 @@ def help
   puts "- exit : exits this program"
 end
 
-def list
-  puts ""
+def list(songs)
+  songs.each do |song|
+    puts song
+  end
 end
 
 def play
