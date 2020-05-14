@@ -43,10 +43,11 @@ def run
     when "help"
       help
     when "play"
-      play
+      play(user_input)
     when "list"
-      list
+      list(user_input)
     end
+    user_input = gets.strip
   end
   
   exit_jukebox
