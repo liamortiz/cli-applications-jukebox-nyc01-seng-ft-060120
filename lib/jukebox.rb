@@ -12,3 +12,6 @@ def play
   user_input = gets.strip
   puts ""
 end
+
+def exit_jukebox
+end
