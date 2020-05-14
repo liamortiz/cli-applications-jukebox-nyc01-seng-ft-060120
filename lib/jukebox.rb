@@ -46,6 +46,7 @@ def run
       play
     when "list"
       list
+    end
   end
   
   exit_jukebox
