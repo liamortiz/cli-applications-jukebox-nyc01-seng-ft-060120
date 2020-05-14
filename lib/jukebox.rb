@@ -25,6 +25,7 @@ def play(songs)
     if user_input.between(1, songs.size)
       puts "Playing #{songs[user_input - 1]}"
     end
+  end
   
 end
 
