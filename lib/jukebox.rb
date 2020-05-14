@@ -19,7 +19,8 @@ def play(songs)
   user_input = gets.strip
   
   if songs.include?(user_input)
-    puts 
+    puts "Playing #{user_input}"
+  end
   
 end
 
