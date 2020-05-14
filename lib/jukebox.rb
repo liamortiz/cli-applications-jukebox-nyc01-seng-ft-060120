@@ -42,7 +42,10 @@ def run
     case user_input
     when "help"
       help
-      
+    when "play"
+      play
+    when "list"
+      list
   end
   
   exit_jukebox
